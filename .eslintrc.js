@@ -12,9 +12,10 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'no-autofix'],
   rules: {
-    'jsx-a11y/label-has-associated-control': 'off',
+    'arrow-body-style': 'off',
+    'no-autofix/arrow-body-style': 'error',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
 };
